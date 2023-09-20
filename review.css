@@ -1,0 +1,305 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My Code*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.reviewpage{
+
+  flex-direction: row;
+  width:100%;
+}
+.reviewpage.displayreview{
+  width: 50%;
+}
+
+.reviewpage .writereview{
+
+  width: 25%;
+  left: 150px;
+  position: relative;
+  background-color: #E6E7EE;
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+
+}
+.writtenbydiv{
+  height: !important 16px;
+  width: 50%;
+
+}
+.writtenbydiv .writtenby{
+  color: lightgrey;
+  font-size: 14px;
+  display: flex;
+}
+.writtenbydiv label{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: flex;
+}
+.reviewpage .writereview h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.reviewplusstars{
+  width: 20%;
+  left: 150px;
+  position: relative;
+  background-color: #E6E7EE;
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  /*
+  box-shadow: 4px 4px 5px #aaaaaa;
+  */
+}
+.neumorphic-shadows {
+  -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+.neumorphic-shadows-hover:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+}
+.reviewplusstars:hover{
+
+}
+.reviewpage .writereview .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.reviewpage .writereview .inputBox input,
+.reviewpage .writereview .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.reviewpage .writereview .inputBox span{
+  position: absolute;
+  left:0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.reviewpage .writereview .inputBox input:focus ~ span,
+.reviewpage .writereview .inputBox input:valid ~ span,
+.reviewpage .writereview .inputBox textarea:focus ~ span,
+.reviewpage .writereview .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.reviewpage .writereview .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+div.stars{
+  width: 270px;
+  display: inline-block;
+}
+
+input.star{
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content:'\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+
+input.star-5:checked ~ label.star:before {
+  color:#FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #F62;
+}
+
+label.star:hover{
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before{
+  content:'\f006';
+  font-family: FontAwesome;
+}
+
+.rev-box{
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .25s;
+}
+
+textarea.review{
+  background: #222;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #EEE;
+}
+
+label.review{
+  display: block;
+  transition:opacity .25s;
+}
+
+input.star:checked ~ .rev-box{
+  height: 125px;
+  overflow: visible;
+}
+@media (max-width:991px) {
+  .contact{
+    padding: 50px;
+  }
+  .contact .container{
+    flex-direction: column;
+  }
+  .contact .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .contact .container .contactInfo,
+  .contact .contactForm{
+    width: 100%;
+  }
+}
